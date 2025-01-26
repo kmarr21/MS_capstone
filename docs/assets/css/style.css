@@ -15,3 +15,10 @@
     }
   }
 }
+
+.post {
+  .post-date {
+    color: #606c71;
+    margin-bottom: 2rem;
+  }
+}
