@@ -10,3 +10,16 @@ url: "https://kmarr21.github.io"
 baseurl: "/MS_capstone"
 
 markdown: kramdown
+
+# site navigation links
+navbar:
+  - name: "Blog Home"
+    href: "/MS_capstone/"
+  - name: "Methodology"
+    href: "/MS_capstone/methodology"
+  - name: "Results"
+    href: "/MS_capstone/results"
+  - name: "Citations"
+    href: "/MS_capstone/citations"
+  - name: "Extra"
+    href: "/MS_capstone/extra"
