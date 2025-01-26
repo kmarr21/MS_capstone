@@ -1,0 +1,12 @@
+title: "MS Capstone Blog"
+description: "Weekly Updates and Learnings"
+theme: jekyll-theme-cayman
+author: "Kiersten Marr"
+my_email: "kmarr621@gmail.com"
+school_email: "kiersten.marr@tufts.edu"
+
+url: "https://kmarr21.github.io"
+baseurl: "/MS_capstone"
+
+permalink: /:year/:month/:day/:title/
+markdown: kramdown
