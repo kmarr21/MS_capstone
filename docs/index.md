@@ -4,7 +4,6 @@ title: "MS Capstone Blog"
 ---
 
 # Welcome to my MS Capstone Blog!
-_By Kiersten Marr_
 
 This blog will update weekly with any project updates/learnings. Below are the most recent posts (newest at the top):
 
