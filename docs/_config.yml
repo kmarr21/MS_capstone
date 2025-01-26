@@ -1,6 +1,7 @@
 title: "MS Capstone Blog"
 description: "Weekly Updates and Learnings"
 theme: jekyll-theme-cayman
+future: true
 author: "Kiersten Marr"
 my_email: "kmarr621@gmail.com"
 school_email: "kiersten.marr@tufts.edu"
