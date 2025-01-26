@@ -8,5 +8,4 @@ school_email: "kiersten.marr@tufts.edu"
 url: "https://kmarr21.github.io"
 baseurl: "/MS_capstone"
 
-permalink: /:year/:month/:day/:title/
 markdown: kramdown
