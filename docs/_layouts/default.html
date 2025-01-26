@@ -1,33 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title | escape }} | {{ site.title | escape }}</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/pages-themes/cayman@latest/assets/css/style.css">
-</head>
-<body>
-  <div class="wrapper">
-    <header class="page-header">
-      <h1>{{ site.title | escape }}</h1>
-      <p>{{ site.description | escape }}</p>
-      <nav class="navbar" style="text-align: center; margin-top: 10px;">
-        <a href="{{ site.baseurl }}/" style="margin-right: 15px;">Home</a>
-        <a href="{{ site.baseurl }}/methodology" style="margin-right: 15px;">Methodology</a>
-        <a href="{{ site.baseurl }}/results" style="margin-right: 15px;">Results</a>
-        <a href="{{ site.baseurl }}/citations" style="margin-right: 15px;">Citations</a>
-        <a href="{{ site.baseurl }}/extra">Extra</a>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <title>{{ page.title | default: site.title }}</title>
+  </head>
+  <body>
+    <header class="page-header" role="banner">
+      <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
+      <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+      
+      <nav class="site-nav">
+        {% for item in site.navbar %}
+          <a href="{{ item.href }}" class="btn">{{ item.name }}</a>
+        {% endfor %}
       </nav>
     </header>
 
-    <main class="page-content">
+    <main id="content" class="main-content" role="main">
       {{ content }}
+      
+      <footer class="site-footer">
+        <p>Created by {{ site.author }}</p>
+        <p><a href="https://pages.github.com/">Hosted on GitHub Pages</a></p>
+      </footer>
     </main>
-
-    <footer class="page-footer">
-      <p>Created by {{ site.author }}</p>
-      <p><a href="https://pages.github.com/">Hosted on GitHub Pages</a></p>
-    </footer>
-  </div>
-</body>
+  </body>
 </html>
