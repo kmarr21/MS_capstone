@@ -1,8 +1,16 @@
 ---
 layout: default
-title: "Home"
+title: "MS Capstone Blog"
 ---
 
 # Welcome to my MS Capstone Blog!
 
-Here, I'll be weekly posting updates about my master's degree capstone project. Stay tuned for more!
+This blog will update weekly with any project updates/learnings. Below are the most recent posts (newest at the top):
+
+{% for post in site.posts %}
+1. [{{ post.title }}]({{ post.url | relative_url }})
+   *{{ post.date | date: "%B %d, %Y" }}*
+
+   {{ post.excerpt }}
+
+{% endfor %}
