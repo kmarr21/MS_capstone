@@ -4,27 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title | escape }} | {{ site.title | escape }}</title>
-  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/pages-themes/cayman@latest/assets/css/style.css">
 </head>
 <body>
-  <header class="page-header">
-    <h1>{{ site.title | escape }}</h1>
-    <p>{{ site.description | escape }}</p>
-    <nav class="navbar">
-      <a href="{{ site.baseurl }}/">Home</a>
-      <a href="{{ site.baseurl }}/methodology">Methodology</a>
-      <a href="{{ site.baseurl }}/results">Results</a>
-      <a href="{{ site.baseurl }}/citations">Citations</a>
-      <a href="{{ site.baseurl }}/extra">Extra</a>
-    </nav>
-  </header>
+  <div class="wrapper">
+    <header class="page-header">
+      <h1>{{ site.title | escape }}</h1>
+      <p>{{ site.description | escape }}</p>
+      <nav class="navbar">
+        <a href="{{ site.baseurl }}/">Home</a>
+        <a href="{{ site.baseurl }}/methodology">Methodology</a>
+        <a href="{{ site.baseurl }}/results">Results</a>
+        <a href="{{ site.baseurl }}/citations">Citations</a>
+        <a href="{{ site.baseurl }}/extra">Extra</a>
+      </nav>
+    </header>
 
-  <main class="page-content">
-    {{ content }}
-  </main>
+    <main class="page-content">
+      {{ content }}
+    </main>
 
-  <footer class="page-footer">
-    <p>Created by {{ site.author }}</p>
-  </footer>
+    <footer class="page-footer">
+      <p>Created by {{ site.author }}</p>
+      <p><a href="https://pages.github.com/">Hosted on GitHub Pages</a></p>
+    </footer>
+  </div>
 </body>
 </html>
