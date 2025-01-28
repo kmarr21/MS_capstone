@@ -11,7 +11,9 @@ This blog will update weekly with any project updates/learnings. Below are the m
 1. [{{ post.title }}]({{ site.baseurl }}{{ post.url }})
    *{{ post.date | date: "%B %d, %Y" }}*
    
-   {{ post.excerpt }}
+   {{ post.content | strip_html | truncatewords: 75 }}
+
+    [Read more]({{ site.baseurl }}{{ post.url }})
    
    ---
 {% endfor %}
